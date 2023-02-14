@@ -1,18 +1,15 @@
 import 'package:flutter/material.dart';
 
+import 'my8ball.dart';
+
 class MyHomePage extends StatelessWidget {
   const MyHomePage({super.key});
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
+    return const Scaffold(
       backgroundColor: Colors.grey,
-      appBar: AppBar(
-        title: const Text(
-          "Mi 8 Ball",
-          style: TextStyle(color: Colors.black, fontSize: 25),
-        ),
-      ),
+      body: SafeArea(child: Ball8()),
     );
   }
 }
